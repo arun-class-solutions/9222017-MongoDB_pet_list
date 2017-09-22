@@ -1,0 +1,42 @@
+.margin-top-20 {
+    margin-top:20px;
+}
+
+.margin-top-10 {
+    margin-top:10px;
+}
+
+.margin-left-5 {
+    margin-left:5px;
+}
+
+.margin-right-5 {
+    margin-right:5px;
+}
+
+.small-container {
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.md-font {
+    font-size:1.7em;
+}
+
+.pet-images {
+    overflow:hidden;
+    border-radius:100%;
+}
+
+.txt-center {
+    text-align:center;
+}
+
+.txt-right {
+    text-align:right;
+}
+
+.bold {
+    font-weight:bold;
+}

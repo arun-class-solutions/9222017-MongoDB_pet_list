@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Add Owner</title>
+
+  <link rel="stylesheet" href="/libraries/bootstrap.css" />
+
+  <link rel="stylesheet" href="/libraries/font-awesome/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <script src="/libraries/jquery.js"></script>
+
+  <script src="/libraries/bootstrap.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/owners">Pet List</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/owners/new">Add Owner</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <h2 class="txt-center">Add Owner</h2>
+
+  <div class="container well small-container margin-top-20">
+    <form method="POST" action="/owners">
+      <div class="bold">
+        First Name
+      </div>
+      <div class="margin-top-10">
+        <input name="firstName" type="text" class="form-control" />
+      </div>
+      <div class="bold margin-top-10">
+        Last Name
+      </div>
+      <div class="margin-top-10">
+        <input name="lastName" type="text" class="form-control" />
+      </div>
+      <div class="bold margin-top-10">
+        Email
+      </div>
+      <div class="margin-top-10">
+        <input name="email" type="email" class="form-control" />
+      </div>
+      <div class="bold margin-top-10">
+        Phone Number
+      </div>
+      <div class="margin-top-10">
+        <input name="phoneNumber" type="tel" class="form-control" />
+      </div>
+      <div class="margin-top-20 txt-center">
+        <button type="submit" class="btn btn-primary">Submit Owner</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

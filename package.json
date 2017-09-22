@@ -1,0 +1,26 @@
+{
+  "name": "pet_list_node_mongo",
+  "version": "1.0.0",
+  "description": "Pet list with Node and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun-projects/Pet-List.git"
+  },
+  "author": "Arun Sood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arun-projects/Pet-List/issues"
+  },
+  "homepage": "https://github.com/arun-projects/Pet-List#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "mongodb": "^2.2.31"
+  }
+}
