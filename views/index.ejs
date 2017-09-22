@@ -62,32 +62,34 @@
                   </div>
               </div>
 
-              <% owner.pets.forEach((pet) => { %>
-                <div class="row margin-top-20">
-                    <div class="col-sm-3">
-                        <img src="<%= pet.photo %>" class="img-responsive" />
-                    </div>
-                    <div class="col-sm-6">
-                        <div>
-                            <strong><%= pet.petName %></strong>
-                        </div>
-                        <div class="margin-top-10">
-                            Age: <%= pet.age %>
-                        </div>
-                        <div>
-                            Breed: <%= pet.breed %>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 txt-right">
-                        <a href="/pets/<%= pet._id %>/edit" class="btn btn-info margin-left-5">
-                            <i class="fa fa-pencil"></i>
-                        </a>
-                        <button class="btn btn-danger margin-left-5 remove-pet-button" data-pet-id="<%= pet._id %>">
-                            <i class="fa fa-remove"></i>
-                        </button>
-                    </div>
-                </div>
-              <% }); %>
+              <% if (owner.pets) { %>
+                <% owner.pets.forEach((pet) => { %>
+                  <div class="row margin-top-20">
+                      <div class="col-sm-3">
+                          <img src="<%= pet.photo %>" class="img-responsive" />
+                      </div>
+                      <div class="col-sm-6">
+                          <div>
+                              <strong><%= pet.petName %></strong>
+                          </div>
+                          <div class="margin-top-10">
+                              Age: <%= pet.age %>
+                          </div>
+                          <div>
+                              Breed: <%= pet.breed %>
+                          </div>
+                      </div>
+                      <div class="col-sm-3 txt-right">
+                          <a href="/pets/<%= pet._id %>/edit" class="btn btn-info margin-left-5">
+                              <i class="fa fa-pencil"></i>
+                          </a>
+                          <button class="btn btn-danger margin-left-5 remove-pet-button" data-pet-id="<%= pet._id %>">
+                              <i class="fa fa-remove"></i>
+                          </button>
+                      </div>
+                  </div>
+                <% }); %>
+              <% } %>
 
               <div class="row margin-top-20">
                   <div class="col-sm-12">
